@@ -1,0 +1,12 @@
+---
+platform: linux
+
+image_resource:
+  type: docker-image
+  source: {repository: qlik/gradle, gradle_version: "3.1.2"}
+
+inputs:
+- name: sampleci
+
+run:
+  path: ./sampleci/ci/test.sh
